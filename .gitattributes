@@ -1,0 +1,5 @@
+# Preserve exact file bytes, including the verified dataset and model artifacts.
+* -text
+*.joblib binary
+*.png binary
+*.jpg binary

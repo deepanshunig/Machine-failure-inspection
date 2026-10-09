@@ -1,0 +1,19 @@
+{
+  "status": "passed",
+  "mysql_version": "9.7.0",
+  "model_version": "ai4i-v1-6ba56612ca",
+  "saved_demo_prediction_ids": [
+    7,
+    8
+  ],
+  "verified": [
+    "health",
+    "API/offline score equality",
+    "batch persistence",
+    "joined history and receipt-date/product filters",
+    "inspection review",
+    "score CHECK constraint",
+    "foreign key",
+    "failed-batch rollback"
+  ]
+}

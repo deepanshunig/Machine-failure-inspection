@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "verified_at_utc": "2026-10-09T17:25:58.210499+00:00",
+  "api_url": "http://127.0.0.1:8001",
+  "model_version": "ai4i-v1-6ba56612ca",
+  "saved_demo_prediction_id": 10,
+  "verified": [
+    "live HTTP health and OpenAPI/docs",
+    "model information including F1/classification report",
+    "single prediction equals offline model score",
+    "inspection review insert and update",
+    "combined receipt-date/product/alert filters",
+    "invalid batch rejected without writes"
+  ]
+}

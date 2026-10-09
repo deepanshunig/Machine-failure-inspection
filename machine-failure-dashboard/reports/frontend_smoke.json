@@ -1,0 +1,33 @@
+{
+  "status": "passed",
+  "verified_at_utc": "2026-10-09T17:53:32.253786+00:00",
+  "dashboard_url": "http://127.0.0.1:8502",
+  "api_url": "http://127.0.0.1:8001",
+  "model_version": "ai4i-v1-6ba56612ca",
+  "browser_created_prediction_ids": [
+    11,
+    12,
+    13
+  ],
+  "reviewed_prediction_id": 13,
+  "logged_snapshots_after_invalid_upload": 10,
+  "automated_tests_passed": 34,
+  "verified": [
+    "six dashboard screens",
+    "browser prediction saved to MySQL with range warning",
+    "browser CSV upload and atomic two-row batch save",
+    "downloaded results CSV contents",
+    "invalid non-finite CSV row blocked with no writes",
+    "browser review update persisted",
+    "combined decision/product/date filters",
+    "F1 and full classification report rendered",
+    "evaluation charts loaded",
+    "offline save disabled in automated interaction test"
+  ],
+  "screenshots": [
+    "screenshots/single_prediction.jpg",
+    "screenshots/batch_results.jpg",
+    "screenshots/invalid_csv.jpg",
+    "screenshots/classification_report.jpg"
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "step_1": {
+    "status": "complete",
+    "evidence": "data_note.md, data_quality.json, split manifest, three training plots"
+  },
+  "step_2": {
+    "status": "complete",
+    "evidence": "baseline_report.md, baseline_cv.json, saved logistic pipeline"
+  },
+  "step_3": {
+    "status": "complete",
+    "evidence": "model_report.md, error_review.md, final_evaluation.json, frozen pipeline and metadata"
+  },
+  "step_4": {
+    "status": "complete",
+    "verified_at_utc": "2026-10-09T17:28:27.003247+00:00",
+    "evidence": "step4_report.md, mysql_smoke.json, api_http_smoke.json; 22 regression tests and Ruff pass; Alembic schema matches; all five SQL examples pass",
+    "mysql_version": "9.7.0",
+    "schema_revision": "0001",
+    "api_url": "http://127.0.0.1:8001"
+  },
+  "step_5": {
+    "status": "complete",
+    "verified_at_utc": "2026-10-09T17:53:32.253786+00:00",
+    "evidence": "frontend_smoke.json, step5_report.md, browser screenshots; 34 tests pass",
+    "dashboard_url": "http://127.0.0.1:8502"
+  },
+  "step_6": {
+    "status": "not_started"
+  }
+}

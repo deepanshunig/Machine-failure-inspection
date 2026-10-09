@@ -1,0 +1,365 @@
+{
+  "stage": 2,
+  "created_at_utc": "2026-10-09T16:34:21.942368+00:00",
+  "dataset_sha256": "dc6630cd9b1f0f853922fad78a1b6436570d3f1ec863f1dd5c4340ac56bc8a8e",
+  "selection_partition": "train",
+  "selection_metric": "mean_training_forward_cv_average_precision",
+  "dummy": {
+    "name": "dummy_prior",
+    "folds": [
+      {
+        "fold": 1,
+        "fit_records": 1500,
+        "fit_first_row": 1,
+        "fit_last_row": 1500,
+        "evaluation_first_row": 1501,
+        "evaluation_last_row": 3000,
+        "evaluation_records": 1500,
+        "evaluation_failures": 32,
+        "ap": 0.021333333333333333
+      },
+      {
+        "fold": 2,
+        "fit_records": 3000,
+        "fit_first_row": 1,
+        "fit_last_row": 3000,
+        "evaluation_first_row": 3001,
+        "evaluation_last_row": 4500,
+        "evaluation_records": 1500,
+        "evaluation_failures": 103,
+        "ap": 0.06866666666666667
+      },
+      {
+        "fold": 3,
+        "fit_records": 4500,
+        "fit_first_row": 1,
+        "fit_last_row": 4500,
+        "evaluation_first_row": 4501,
+        "evaluation_last_row": 6000,
+        "evaluation_records": 1500,
+        "evaluation_failures": 78,
+        "ap": 0.052
+      }
+    ],
+    "mean_ap": 0.04733333333333333
+  },
+  "candidates": [
+    {
+      "name": "logistic_C0.1_ordinary",
+      "params": {
+        "C": 0.1,
+        "class_weight": null
+      },
+      "folds": [
+        {
+          "fold": 1,
+          "fit_records": 1500,
+          "fit_first_row": 1,
+          "fit_last_row": 1500,
+          "evaluation_first_row": 1501,
+          "evaluation_last_row": 3000,
+          "evaluation_records": 1500,
+          "evaluation_failures": 32,
+          "ap": 0.4108065225280025
+        },
+        {
+          "fold": 2,
+          "fit_records": 3000,
+          "fit_first_row": 1,
+          "fit_last_row": 3000,
+          "evaluation_first_row": 3001,
+          "evaluation_last_row": 4500,
+          "evaluation_records": 1500,
+          "evaluation_failures": 103,
+          "ap": 0.4167080837102799
+        },
+        {
+          "fold": 3,
+          "fit_records": 4500,
+          "fit_first_row": 1,
+          "fit_last_row": 4500,
+          "evaluation_first_row": 4501,
+          "evaluation_last_row": 6000,
+          "evaluation_records": 1500,
+          "evaluation_failures": 78,
+          "ap": 0.40441662940642753
+        }
+      ],
+      "mean_ap": 0.41064374521490327,
+      "std_ap": 0.005019285112853393
+    },
+    {
+      "name": "logistic_C0.1_balanced",
+      "params": {
+        "C": 0.1,
+        "class_weight": "balanced"
+      },
+      "folds": [
+        {
+          "fold": 1,
+          "fit_records": 1500,
+          "fit_first_row": 1,
+          "fit_last_row": 1500,
+          "evaluation_first_row": 1501,
+          "evaluation_last_row": 3000,
+          "evaluation_records": 1500,
+          "evaluation_failures": 32,
+          "ap": 0.3698078652983867
+        },
+        {
+          "fold": 2,
+          "fit_records": 3000,
+          "fit_first_row": 1,
+          "fit_last_row": 3000,
+          "evaluation_first_row": 3001,
+          "evaluation_last_row": 4500,
+          "evaluation_records": 1500,
+          "evaluation_failures": 103,
+          "ap": 0.402593568361912
+        },
+        {
+          "fold": 3,
+          "fit_records": 4500,
+          "fit_first_row": 1,
+          "fit_last_row": 4500,
+          "evaluation_first_row": 4501,
+          "evaluation_last_row": 6000,
+          "evaluation_records": 1500,
+          "evaluation_failures": 78,
+          "ap": 0.4277975905574004
+        }
+      ],
+      "mean_ap": 0.40006634140589964,
+      "std_ap": 0.02374155591600754
+    },
+    {
+      "name": "logistic_C1.0_ordinary",
+      "params": {
+        "C": 1.0,
+        "class_weight": null
+      },
+      "folds": [
+        {
+          "fold": 1,
+          "fit_records": 1500,
+          "fit_first_row": 1,
+          "fit_last_row": 1500,
+          "evaluation_first_row": 1501,
+          "evaluation_last_row": 3000,
+          "evaluation_records": 1500,
+          "evaluation_failures": 32,
+          "ap": 0.4143398980941762
+        },
+        {
+          "fold": 2,
+          "fit_records": 3000,
+          "fit_first_row": 1,
+          "fit_last_row": 3000,
+          "evaluation_first_row": 3001,
+          "evaluation_last_row": 4500,
+          "evaluation_records": 1500,
+          "evaluation_failures": 103,
+          "ap": 0.42065166254013986
+        },
+        {
+          "fold": 3,
+          "fit_records": 4500,
+          "fit_first_row": 1,
+          "fit_last_row": 4500,
+          "evaluation_first_row": 4501,
+          "evaluation_last_row": 6000,
+          "evaluation_records": 1500,
+          "evaluation_failures": 78,
+          "ap": 0.4257203482116053
+        }
+      ],
+      "mean_ap": 0.4202373029486404,
+      "std_ap": 0.004655278840350576
+    },
+    {
+      "name": "logistic_C1.0_balanced",
+      "params": {
+        "C": 1.0,
+        "class_weight": "balanced"
+      },
+      "folds": [
+        {
+          "fold": 1,
+          "fit_records": 1500,
+          "fit_first_row": 1,
+          "fit_last_row": 1500,
+          "evaluation_first_row": 1501,
+          "evaluation_last_row": 3000,
+          "evaluation_records": 1500,
+          "evaluation_failures": 32,
+          "ap": 0.3096965225567743
+        },
+        {
+          "fold": 2,
+          "fit_records": 3000,
+          "fit_first_row": 1,
+          "fit_last_row": 3000,
+          "evaluation_first_row": 3001,
+          "evaluation_last_row": 4500,
+          "evaluation_records": 1500,
+          "evaluation_failures": 103,
+          "ap": 0.3980949924119344
+        },
+        {
+          "fold": 3,
+          "fit_records": 4500,
+          "fit_first_row": 1,
+          "fit_last_row": 4500,
+          "evaluation_first_row": 4501,
+          "evaluation_last_row": 6000,
+          "evaluation_records": 1500,
+          "evaluation_failures": 78,
+          "ap": 0.4340482753901368
+        }
+      ],
+      "mean_ap": 0.3806132634529485,
+      "std_ap": 0.05224970649824426
+    },
+    {
+      "name": "logistic_C10.0_ordinary",
+      "params": {
+        "C": 10.0,
+        "class_weight": null
+      },
+      "folds": [
+        {
+          "fold": 1,
+          "fit_records": 1500,
+          "fit_first_row": 1,
+          "fit_last_row": 1500,
+          "evaluation_first_row": 1501,
+          "evaluation_last_row": 3000,
+          "evaluation_records": 1500,
+          "evaluation_failures": 32,
+          "ap": 0.4068856884134945
+        },
+        {
+          "fold": 2,
+          "fit_records": 3000,
+          "fit_first_row": 1,
+          "fit_last_row": 3000,
+          "evaluation_first_row": 3001,
+          "evaluation_last_row": 4500,
+          "evaluation_records": 1500,
+          "evaluation_failures": 103,
+          "ap": 0.4201600990138583
+        },
+        {
+          "fold": 3,
+          "fit_records": 4500,
+          "fit_first_row": 1,
+          "fit_last_row": 4500,
+          "evaluation_first_row": 4501,
+          "evaluation_last_row": 6000,
+          "evaluation_records": 1500,
+          "evaluation_failures": 78,
+          "ap": 0.4314173445697424
+        }
+      ],
+      "mean_ap": 0.4194877106656984,
+      "std_ap": 0.010026286052510503
+    },
+    {
+      "name": "logistic_C10.0_balanced",
+      "params": {
+        "C": 10.0,
+        "class_weight": "balanced"
+      },
+      "folds": [
+        {
+          "fold": 1,
+          "fit_records": 1500,
+          "fit_first_row": 1,
+          "fit_last_row": 1500,
+          "evaluation_first_row": 1501,
+          "evaluation_last_row": 3000,
+          "evaluation_records": 1500,
+          "evaluation_failures": 32,
+          "ap": 0.3044598220258631
+        },
+        {
+          "fold": 2,
+          "fit_records": 3000,
+          "fit_first_row": 1,
+          "fit_last_row": 3000,
+          "evaluation_first_row": 3001,
+          "evaluation_last_row": 4500,
+          "evaluation_records": 1500,
+          "evaluation_failures": 103,
+          "ap": 0.3961599478435625
+        },
+        {
+          "fold": 3,
+          "fit_records": 4500,
+          "fit_first_row": 1,
+          "fit_last_row": 4500,
+          "evaluation_first_row": 4501,
+          "evaluation_last_row": 6000,
+          "evaluation_records": 1500,
+          "evaluation_failures": 78,
+          "ap": 0.43492632145097043
+        }
+      ],
+      "mean_ap": 0.37851536377346534,
+      "std_ap": 0.054704511564802584
+    }
+  ],
+  "selected_logistic": {
+    "name": "logistic_C1.0_ordinary",
+    "params": {
+      "C": 1.0,
+      "class_weight": null
+    },
+    "folds": [
+      {
+        "fold": 1,
+        "fit_records": 1500,
+        "fit_first_row": 1,
+        "fit_last_row": 1500,
+        "evaluation_first_row": 1501,
+        "evaluation_last_row": 3000,
+        "evaluation_records": 1500,
+        "evaluation_failures": 32,
+        "ap": 0.4143398980941762
+      },
+      {
+        "fold": 2,
+        "fit_records": 3000,
+        "fit_first_row": 1,
+        "fit_last_row": 3000,
+        "evaluation_first_row": 3001,
+        "evaluation_last_row": 4500,
+        "evaluation_records": 1500,
+        "evaluation_failures": 103,
+        "ap": 0.42065166254013986
+      },
+      {
+        "fold": 3,
+        "fit_records": 4500,
+        "fit_first_row": 1,
+        "fit_last_row": 4500,
+        "evaluation_first_row": 4501,
+        "evaluation_last_row": 6000,
+        "evaluation_records": 1500,
+        "evaluation_failures": 78,
+        "ap": 0.4257203482116053
+      }
+    ],
+    "mean_ap": 0.4202373029486404,
+    "std_ap": 0.004655278840350576
+  },
+  "held_out_validation_evaluated": false,
+  "held_out_test_evaluated": false,
+  "deployment_threshold_selected": false,
+  "versions": {
+    "scikit-learn": "1.9.1",
+    "pandas": "3.0.6",
+    "numpy": "2.5.3",
+    "joblib": "1.6.0"
+  }
+}

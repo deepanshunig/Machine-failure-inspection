@@ -1,0 +1,17 @@
+{
+  "dataset": "UCI AI4I 2020 Predictive Maintenance",
+  "dataset_page": "https://archive.ics.uci.edu/dataset/601/ai4i%2B2020%2Bpredictive%2Bmaintenance%2Bdataset",
+  "archive_url": "https://archive.ics.uci.edu/static/public/601/ai4i%2B2020%2Bpredictive%2Bmaintenance%2Bdataset.zip",
+  "doi": "10.24432/C5HS5C",
+  "license": "CC BY 4.0",
+  "csv_sha256": "dc6630cd9b1f0f853922fad78a1b6436570d3f1ec863f1dd5c4340ac56bc8a8e",
+  "manifest_sha256": "2f2bbb124138d085947e9560ef55ec58cc233c27092fba62f02a923caf3f4732",
+  "prepared_at_utc": "2026-10-09T16:31:09.446805+00:00",
+  "python_version": "3.12.14",
+  "dependencies": {
+    "numpy": "2.5.3",
+    "pandas": "3.0.6",
+    "matplotlib": "3.11.2",
+    "scikit-learn": "1.9.1"
+  }
+}

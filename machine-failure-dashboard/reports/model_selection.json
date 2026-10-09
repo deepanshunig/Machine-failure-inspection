@@ -1,0 +1,478 @@
+{
+  "created_at_utc": "2026-10-09T16:39:13.671097+00:00",
+  "dataset_sha256": "dc6630cd9b1f0f853922fad78a1b6436570d3f1ec863f1dd5c4340ac56bc8a8e",
+  "selection_partition": "train",
+  "selection_metric": "mean_training_forward_cv_average_precision",
+  "candidates": [
+    {
+      "name": "logistic_C1.0_ordinary",
+      "params": {
+        "C": 1.0,
+        "class_weight": null
+      },
+      "folds": [
+        {
+          "fold": 1,
+          "fit_records": 1500,
+          "fit_first_row": 1,
+          "fit_last_row": 1500,
+          "evaluation_first_row": 1501,
+          "evaluation_last_row": 3000,
+          "evaluation_records": 1500,
+          "evaluation_failures": 32,
+          "ap": 0.4143398980941762
+        },
+        {
+          "fold": 2,
+          "fit_records": 3000,
+          "fit_first_row": 1,
+          "fit_last_row": 3000,
+          "evaluation_first_row": 3001,
+          "evaluation_last_row": 4500,
+          "evaluation_records": 1500,
+          "evaluation_failures": 103,
+          "ap": 0.42065166254013986
+        },
+        {
+          "fold": 3,
+          "fit_records": 4500,
+          "fit_first_row": 1,
+          "fit_last_row": 4500,
+          "evaluation_first_row": 4501,
+          "evaluation_last_row": 6000,
+          "evaluation_records": 1500,
+          "evaluation_failures": 78,
+          "ap": 0.4257203482116053
+        }
+      ],
+      "mean_ap": 0.4202373029486404,
+      "std_ap": 0.004655278840350576,
+      "algorithm": "logistic_regression"
+    },
+    {
+      "name": "forest_raw_depth8_None",
+      "algorithm": "random_forest",
+      "params": {
+        "physical": false,
+        "max_depth": 8,
+        "class_weight": null
+      },
+      "folds": [
+        {
+          "fold": 1,
+          "fit_records": 1500,
+          "fit_first_row": 1,
+          "fit_last_row": 1500,
+          "evaluation_first_row": 1501,
+          "evaluation_last_row": 3000,
+          "evaluation_records": 1500,
+          "evaluation_failures": 32,
+          "ap": 0.6085785454007298
+        },
+        {
+          "fold": 2,
+          "fit_records": 3000,
+          "fit_first_row": 1,
+          "fit_last_row": 3000,
+          "evaluation_first_row": 3001,
+          "evaluation_last_row": 4500,
+          "evaluation_records": 1500,
+          "evaluation_failures": 103,
+          "ap": 0.4590815561328311
+        },
+        {
+          "fold": 3,
+          "fit_records": 4500,
+          "fit_first_row": 1,
+          "fit_last_row": 4500,
+          "evaluation_first_row": 4501,
+          "evaluation_last_row": 6000,
+          "evaluation_records": 1500,
+          "evaluation_failures": 78,
+          "ap": 0.6547334317409926
+        }
+      ],
+      "mean_ap": 0.5741311777581845,
+      "std_ap": 0.08350600760972585
+    },
+    {
+      "name": "forest_raw_depth8_balanced",
+      "algorithm": "random_forest",
+      "params": {
+        "physical": false,
+        "max_depth": 8,
+        "class_weight": "balanced"
+      },
+      "folds": [
+        {
+          "fold": 1,
+          "fit_records": 1500,
+          "fit_first_row": 1,
+          "fit_last_row": 1500,
+          "evaluation_first_row": 1501,
+          "evaluation_last_row": 3000,
+          "evaluation_records": 1500,
+          "evaluation_failures": 32,
+          "ap": 0.405844998709041
+        },
+        {
+          "fold": 2,
+          "fit_records": 3000,
+          "fit_first_row": 1,
+          "fit_last_row": 3000,
+          "evaluation_first_row": 3001,
+          "evaluation_last_row": 4500,
+          "evaluation_records": 1500,
+          "evaluation_failures": 103,
+          "ap": 0.35151168542177536
+        },
+        {
+          "fold": 3,
+          "fit_records": 4500,
+          "fit_first_row": 1,
+          "fit_last_row": 4500,
+          "evaluation_first_row": 4501,
+          "evaluation_last_row": 6000,
+          "evaluation_records": 1500,
+          "evaluation_failures": 78,
+          "ap": 0.6496608325699805
+        }
+      ],
+      "mean_ap": 0.46900583890026565,
+      "std_ap": 0.12965389128122762
+    },
+    {
+      "name": "forest_raw_depthNone_None",
+      "algorithm": "random_forest",
+      "params": {
+        "physical": false,
+        "max_depth": null,
+        "class_weight": null
+      },
+      "folds": [
+        {
+          "fold": 1,
+          "fit_records": 1500,
+          "fit_first_row": 1,
+          "fit_last_row": 1500,
+          "evaluation_first_row": 1501,
+          "evaluation_last_row": 3000,
+          "evaluation_records": 1500,
+          "evaluation_failures": 32,
+          "ap": 0.6038805234151244
+        },
+        {
+          "fold": 2,
+          "fit_records": 3000,
+          "fit_first_row": 1,
+          "fit_last_row": 3000,
+          "evaluation_first_row": 3001,
+          "evaluation_last_row": 4500,
+          "evaluation_records": 1500,
+          "evaluation_failures": 103,
+          "ap": 0.44147303516745584
+        },
+        {
+          "fold": 3,
+          "fit_records": 4500,
+          "fit_first_row": 1,
+          "fit_last_row": 4500,
+          "evaluation_first_row": 4501,
+          "evaluation_last_row": 6000,
+          "evaluation_records": 1500,
+          "evaluation_failures": 78,
+          "ap": 0.6750319378879761
+        }
+      ],
+      "mean_ap": 0.5734618321568521,
+      "std_ap": 0.09774597295508029
+    },
+    {
+      "name": "forest_raw_depthNone_balanced",
+      "algorithm": "random_forest",
+      "params": {
+        "physical": false,
+        "max_depth": null,
+        "class_weight": "balanced"
+      },
+      "folds": [
+        {
+          "fold": 1,
+          "fit_records": 1500,
+          "fit_first_row": 1,
+          "fit_last_row": 1500,
+          "evaluation_first_row": 1501,
+          "evaluation_last_row": 3000,
+          "evaluation_records": 1500,
+          "evaluation_failures": 32,
+          "ap": 0.4063295751342333
+        },
+        {
+          "fold": 2,
+          "fit_records": 3000,
+          "fit_first_row": 1,
+          "fit_last_row": 3000,
+          "evaluation_first_row": 3001,
+          "evaluation_last_row": 4500,
+          "evaluation_records": 1500,
+          "evaluation_failures": 103,
+          "ap": 0.3593125495425742
+        },
+        {
+          "fold": 3,
+          "fit_records": 4500,
+          "fit_first_row": 1,
+          "fit_last_row": 4500,
+          "evaluation_first_row": 4501,
+          "evaluation_last_row": 6000,
+          "evaluation_records": 1500,
+          "evaluation_failures": 78,
+          "ap": 0.6417063657204956
+        }
+      ],
+      "mean_ap": 0.4691161634657677,
+      "std_ap": 0.12353996279104072
+    },
+    {
+      "name": "forest_physical_depth8_None",
+      "algorithm": "random_forest",
+      "params": {
+        "physical": true,
+        "max_depth": 8,
+        "class_weight": null
+      },
+      "folds": [
+        {
+          "fold": 1,
+          "fit_records": 1500,
+          "fit_first_row": 1,
+          "fit_last_row": 1500,
+          "evaluation_first_row": 1501,
+          "evaluation_last_row": 3000,
+          "evaluation_records": 1500,
+          "evaluation_failures": 32,
+          "ap": 0.7099860884532591
+        },
+        {
+          "fold": 2,
+          "fit_records": 3000,
+          "fit_first_row": 1,
+          "fit_last_row": 3000,
+          "evaluation_first_row": 3001,
+          "evaluation_last_row": 4500,
+          "evaluation_records": 1500,
+          "evaluation_failures": 103,
+          "ap": 0.5071849568023467
+        },
+        {
+          "fold": 3,
+          "fit_records": 4500,
+          "fit_first_row": 1,
+          "fit_last_row": 4500,
+          "evaluation_first_row": 4501,
+          "evaluation_last_row": 6000,
+          "evaluation_records": 1500,
+          "evaluation_failures": 78,
+          "ap": 0.9352546261059698
+        }
+      ],
+      "mean_ap": 0.7174752237871918,
+      "std_ap": 0.1748389274074203
+    },
+    {
+      "name": "forest_physical_depth8_balanced",
+      "algorithm": "random_forest",
+      "params": {
+        "physical": true,
+        "max_depth": 8,
+        "class_weight": "balanced"
+      },
+      "folds": [
+        {
+          "fold": 1,
+          "fit_records": 1500,
+          "fit_first_row": 1,
+          "fit_last_row": 1500,
+          "evaluation_first_row": 1501,
+          "evaluation_last_row": 3000,
+          "evaluation_records": 1500,
+          "evaluation_failures": 32,
+          "ap": 0.6689264211537618
+        },
+        {
+          "fold": 2,
+          "fit_records": 3000,
+          "fit_first_row": 1,
+          "fit_last_row": 3000,
+          "evaluation_first_row": 3001,
+          "evaluation_last_row": 4500,
+          "evaluation_records": 1500,
+          "evaluation_failures": 103,
+          "ap": 0.4279464123181677
+        },
+        {
+          "fold": 3,
+          "fit_records": 4500,
+          "fit_first_row": 1,
+          "fit_last_row": 4500,
+          "evaluation_first_row": 4501,
+          "evaluation_last_row": 6000,
+          "evaluation_records": 1500,
+          "evaluation_failures": 78,
+          "ap": 0.8932269312834359
+        }
+      ],
+      "mean_ap": 0.6633665882517885,
+      "std_ap": 0.1899906561537009
+    },
+    {
+      "name": "forest_physical_depthNone_None",
+      "algorithm": "random_forest",
+      "params": {
+        "physical": true,
+        "max_depth": null,
+        "class_weight": null
+      },
+      "folds": [
+        {
+          "fold": 1,
+          "fit_records": 1500,
+          "fit_first_row": 1,
+          "fit_last_row": 1500,
+          "evaluation_first_row": 1501,
+          "evaluation_last_row": 3000,
+          "evaluation_records": 1500,
+          "evaluation_failures": 32,
+          "ap": 0.7086759394273833
+        },
+        {
+          "fold": 2,
+          "fit_records": 3000,
+          "fit_first_row": 1,
+          "fit_last_row": 3000,
+          "evaluation_first_row": 3001,
+          "evaluation_last_row": 4500,
+          "evaluation_records": 1500,
+          "evaluation_failures": 103,
+          "ap": 0.5016651605124566
+        },
+        {
+          "fold": 3,
+          "fit_records": 4500,
+          "fit_first_row": 1,
+          "fit_last_row": 4500,
+          "evaluation_first_row": 4501,
+          "evaluation_last_row": 6000,
+          "evaluation_records": 1500,
+          "evaluation_failures": 78,
+          "ap": 0.935711857992471
+        }
+      ],
+      "mean_ap": 0.715350985977437,
+      "std_ap": 0.17726167302072726
+    },
+    {
+      "name": "forest_physical_depthNone_balanced",
+      "algorithm": "random_forest",
+      "params": {
+        "physical": true,
+        "max_depth": null,
+        "class_weight": "balanced"
+      },
+      "folds": [
+        {
+          "fold": 1,
+          "fit_records": 1500,
+          "fit_first_row": 1,
+          "fit_last_row": 1500,
+          "evaluation_first_row": 1501,
+          "evaluation_last_row": 3000,
+          "evaluation_records": 1500,
+          "evaluation_failures": 32,
+          "ap": 0.681044489208195
+        },
+        {
+          "fold": 2,
+          "fit_records": 3000,
+          "fit_first_row": 1,
+          "fit_last_row": 3000,
+          "evaluation_first_row": 3001,
+          "evaluation_last_row": 4500,
+          "evaluation_records": 1500,
+          "evaluation_failures": 103,
+          "ap": 0.4300947672394797
+        },
+        {
+          "fold": 3,
+          "fit_records": 4500,
+          "fit_first_row": 1,
+          "fit_last_row": 4500,
+          "evaluation_first_row": 4501,
+          "evaluation_last_row": 6000,
+          "evaluation_records": 1500,
+          "evaluation_failures": 78,
+          "ap": 0.921737934016142
+        }
+      ],
+      "mean_ap": 0.6776257301546056,
+      "std_ap": 0.20072703985702595
+    }
+  ],
+  "selected": {
+    "name": "forest_physical_depth8_None",
+    "algorithm": "random_forest",
+    "params": {
+      "physical": true,
+      "max_depth": 8,
+      "class_weight": null
+    },
+    "folds": [
+      {
+        "fold": 1,
+        "fit_records": 1500,
+        "fit_first_row": 1,
+        "fit_last_row": 1500,
+        "evaluation_first_row": 1501,
+        "evaluation_last_row": 3000,
+        "evaluation_records": 1500,
+        "evaluation_failures": 32,
+        "ap": 0.7099860884532591
+      },
+      {
+        "fold": 2,
+        "fit_records": 3000,
+        "fit_first_row": 1,
+        "fit_last_row": 3000,
+        "evaluation_first_row": 3001,
+        "evaluation_last_row": 4500,
+        "evaluation_records": 1500,
+        "evaluation_failures": 103,
+        "ap": 0.5071849568023467
+      },
+      {
+        "fold": 3,
+        "fit_records": 4500,
+        "fit_first_row": 1,
+        "fit_last_row": 4500,
+        "evaluation_first_row": 4501,
+        "evaluation_last_row": 6000,
+        "evaluation_records": 1500,
+        "evaluation_failures": 78,
+        "ap": 0.9352546261059698
+      }
+    ],
+    "mean_ap": 0.7174752237871918,
+    "std_ap": 0.1748389274074203
+  },
+  "artifact_sha256": "6ba56612ca11fcd9b9eb8d76689cb19ed33da567f7c4229e91b79fd58baa5281",
+  "model_version": "ai4i-v1-6ba56612ca",
+  "fit_records": 6000,
+  "validation_used_for_model_selection": false,
+  "test_used_for_model_selection": false,
+  "versions": {
+    "scikit-learn": "1.9.1",
+    "pandas": "3.0.6",
+    "numpy": "2.5.3",
+    "joblib": "1.6.0"
+  }
+}
